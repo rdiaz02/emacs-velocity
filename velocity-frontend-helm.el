@@ -29,7 +29,7 @@
 (defvar velocity--helm-create-source
   (helm-build-sync-source
       "Create"
-    :requires-pattern 55
+    :requires-pattern 75
     :nohighlight t
     :volatile t
     :match-dynamic t
