@@ -87,7 +87,9 @@ Follow-mode is enabled by default. To disable it, invoke `C-c C-f` during the he
 
 ### Creating
 
-When the input is at least 15 characters, Velocity guesses you're writing the title of a new entry instead of a search query, and displays a list of possible targets; if you select any of those, a new note is created and displayed.
+When the input is at least 55 characters, Velocity guesses you're writing the title of a new entry instead of a search query, and displays a list of possible targets; if you select any of those, a new note is created and displayed.
+
+I change the value from 15 to 55 because I am using velocity mostly for searching, not creating. 
 
 ## Related work
 
