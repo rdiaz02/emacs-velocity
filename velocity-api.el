@@ -196,7 +196,10 @@
 
 (defun velocity--get-file-buffer (filename)
   (or (get-file-buffer filename)
-      (find-file-noselect filename)))
+      (find-file-noselect filename)
+      ;; RDU: nope, buffer in list, and this is view mode so cannot modify
+      ;; (view-file filename)
+      ))
 
 (defun velocity--make-indirect-buffer (base-buffer name)
   "Create indirect buffer of `base-buffer' and name it `name'. If
