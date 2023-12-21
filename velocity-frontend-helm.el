@@ -1,5 +1,10 @@
 ;;; DEPENDENCIES
 
+
+;; RDU: make sure current directory in load path
+(add-to-list 'load-path (expand-file-name default-directory))
+
+
 (require 'velocity-api)
 (require 'helm)
 

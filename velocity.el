@@ -34,11 +34,16 @@
 
 ;;; Code:
 
+;; RDU: make sure current directory in load path
+(add-to-list 'load-path (expand-file-name default-directory))
+
+
 (defvar velocity-backends '())
 (require 'velocity-api)
 (require 'velocity-backend-org)
 (require 'velocity-backend-markdown)
 (require 'velocity-frontend-helm)
+
 
 ;;; USER INTERFACE
 
