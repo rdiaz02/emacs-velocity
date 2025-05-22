@@ -4,7 +4,8 @@
 ;; ;; RDU: make sure current directory in load path
 ;; (add-to-list 'load-path (expand-file-name default-directory))
 
-(defvar velocity-backends)
+;; (defvar velocity-backends)
+(defvar velocity-backends '())
 
 (defun velocity-register-backend (name callbacks)
   (setq velocity-backends
